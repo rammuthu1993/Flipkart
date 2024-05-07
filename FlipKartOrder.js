@@ -13,7 +13,9 @@ function order(){
         document.getElementById('order_cart').innerHTML = "Your Cart Is Empty"
     }
     let l = final.length;
-    document.getElementById('order').innerHTML = l
+   let count = document.querySelectorAll('#order')
+   count[0].innerHTML = l
+   count[1].innerHTML = l
     let Amount = 0
     let c = 1 
   let table = document.createElement('table')   
