@@ -1,0 +1,27 @@
+.p2menu{
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+table{
+    width: 50%;
+}
+th,td{
+    text-align: center;
+}
+@media screen and (max-width:962px) {
+    .p2menu{
+        display: none;
+    }
+    table{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:762px){
+    table{
+        width: 100%;
+        font-size: 12px;
+    }
+}

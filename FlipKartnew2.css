@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   }
+
+ 
+.p2menu{
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+#body_f2{
+    padding: 10px;
+}
+.star{
+    background-color: green;
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+}
+.description{
+    text-align: center;
+    line-height: 25px;
+}
+.mob_list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.mob_detail{
+
+}
+.mob_detail a{
+    text-decoration: none;
+    color:inherit;
+}
+.mob_detail img{
+ padding-left: 30px;
+   
+}
+@media screen and (max-width:962px) {
+   
+    .p2menu{
+        display: none;
+    }
+}
+@media screen and (max-width:762px){
+    .mob_detail{
+grid-template-columns: repeat(auto-fit);     
+    }
+}
