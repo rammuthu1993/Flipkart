@@ -108,7 +108,7 @@
     .smenu li:hover .submenu{
         display: block;
     }
-    #hamburger1 li{
+    #hamburger1 .li{
         float: left;
         padding: 10px;
     }
@@ -127,10 +127,26 @@
     .menu{
         line-height: 8px;
     }
+    
     .mlist{
         width:30px ;
         height: 4px;
         background-color: black;
+        margin-top: 5px;
+    }
+    .hammenu{
+        width: 250px;
+        background-color:white;
+        line-height: 30px;
+        box-shadow: 2px 2px 2px rgb(181, 180, 180);
+        position: absolute;
+        z-index: 1;
+        padding: 10px;
+        border-radius: 5px;
+        display: none;
+    }
+    .menu:hover .hammenu{
+            display: block;
     }
     #hamburger{
         display: flex;
@@ -187,7 +203,51 @@
         background-color: yellow;
       }
    
+    .signin{
+        width: 250px;
+        background-color: white;
+        line-height: 30px;
+        position:absolute;
+        z-index: 120;
+        padding: 10px;
+        border-radius: 5px;
+        display: none;
+  }
+     .login{
+        padding: 10px;
+     }
+    .signin li:nth-child(1){
+        border-bottom: 2px solid rgb(174, 172, 172);
+    }
+    .login:hover .signin{
+        display: block;
+    }
+    .form{
+        line-height: 30px;
+        background: linear-gradient(rgb(213, 212, 212), rgb(59, 55, 55), rgb(86, 84, 84));
+        padding: 30px;
+        border-radius: 5px;
+        color: white;
+    }
+    .form input{
+        width: 80%;
+        height: 40px;
+        border-radius: 5px;
+        border-style: none;
+    }
+    #signup{
+        display: grid;
+        position: absolute;
+        left: 50%;
+        z-index: 11;
+        transition: all 1s;
+        display: none;
+    }
     
+
+    .weak{width: 80px;height: 10px;background-color: red;border-radius: 5px;}
+    .medium{width: 150px;height: 10px;background-color: yellow;border-radius: 5px;}
+    .strong{width: 200px;height: 10px;background-color: green;border-radius: 5px;}
 @media screen and (max-width:962px) {
    #mainmenu{
         display: none;
@@ -201,6 +261,10 @@
     #hamburger2{
         display: block;
     }
+    #signup{
+        display: none;
+    }
+
 }   
 @media screen and (max-width:762px) {
     #body{
@@ -221,7 +285,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-       width: 100%;
+        width: 100%;
         border-style: none;
     }
     .item img{
@@ -236,6 +300,9 @@
     }
     .cart1{
         flex-direction: column;
+    }
+    #signup{
+        display: none;
     }
 }
   

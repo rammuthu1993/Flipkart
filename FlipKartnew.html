@@ -12,13 +12,21 @@
     <div id="row"> 
 
       <div id="hamburger">
-     <ul id="hamburger1" style="float: left;">
-           <li class="menu"><div class="mlist"></div> <br>
-                    <div class="mlist"></div> <br>
-                    <div class="mlist"></div></li>
-            <li><img src="imgs/fkheaderlogo_exploreplus-44005d.svg" alt=""></li> 
-            </ul>
-
+     <div id="hamburger1" style="float: left;">
+           <div class="menu li">
+                    <div class="mlist"></div> 
+                    <div class="mlist"></div>
+                    <div class="mlist"></div>
+                    <ul class="hammenu">
+                        <li>Become a seller</li>
+                        <li><a style="text-decoration: none;color:black;" href="/FlipKartnew2.html">Mobiles</a></li>
+                        <li>Watches</li>
+                    </ul>   
+            </div>  
+                
+            <div class="li"><img src="imgs/fkheaderlogo_exploreplus-44005d.svg" alt=""></div> 
+     </div>
+     
      <ul id="hamburger2" style="float: right;">
             <li><a href=""><i class="fa-solid fa-user"></i></a></li>
             <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
@@ -28,7 +36,17 @@
   <div id="mainmenu">
      <div><img src="imgs/fkheaderlogo_exploreplus-44005d.svg" alt=""></div>
          <div><input id="input" type="text"  placeholder="Search"></div>
-         <div><i class="fa-solid fa-user"></i>&nbsp;Login&nbsp;<i class="fa-solid fa-angle-down"></i></div>
+         <div class="login"><i class="fa-solid fa-user"></i>&nbsp;Login&nbsp;<i class="fa-solid fa-angle-down"></i>
+        <ul class="signin">
+            <li><b  onclick="signupbanner()" style="cursor: pointer; color: blue;">Sign Up</b> <b style="float: right;color: blue;">Sign In?</b></li>
+            <li>My Profile</li>
+            <li>Flipkart Plus Zone</li>
+            <li>Orders</li>
+            <li>Wishlist</li>
+            <li>Rewards</li>
+            <li >Gift Cards</li> 
+        </ul>
+        </div>
          <div><i class="fa-solid fa-cart-shopping"></i>&nbsp;Cart</div>
          <div>Become a Seller</div>
          <div class="dot">. <br> . <br> .</div>
@@ -36,6 +54,38 @@
 
     </div>
 
+<div id="signup" class="col-6" >
+    <form action="" class="form col-10" onsubmit="return signup()" autocomplete="off">
+        <button id="cancel" style="border-style: none;border-radius: 5px; float: right; padding: 10px;font-size: 20px; background-color: rgb(225, 222, 222);color: white;">X</button>
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname">
+        <p></p>
+        <br>
+        <label for="lname" >Last Name:</label><br>
+        <input type="text" id="lname">
+        <p></p>
+        <br>
+        <label for="mob_no">Mobile No:</label><br>
+        <input type="text"  id="mob_no">
+        <p></p>
+        <br>
+        <label for="email">E-Mail:</label><br>
+        <input type="text" id="mail">
+        <p></p>
+        <br>
+        <label for="pword">New Password</label><br>
+        <input type="text" id="pword">
+        <p></p>
+        <p class="hint"></p>
+        <div id="hint"></div>
+        <br> 
+        <label for="cpword">Confirm Password</label><br>
+        <input type="text" id="npword" >
+        <p></p>
+        <br> <br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
 
 <div id="body">
 
@@ -166,7 +216,7 @@
         <div  style=" position:absolute;margin-left: 75%;margin-top: 10%;z-index: 1;">
             <button id="button" onclick="left()" style="padding: 70%; font-size: 20px; float: right;position: relative;">&rangle;</button></div>
 
-    <div class="best">
+    <div class="best" style="right: 0;">  
         
         <div class="item" >
             <img src="imgs/smwatch.jpeg" alt="">
